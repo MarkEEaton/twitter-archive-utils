@@ -1,4 +1,4 @@
-#encoding: utf-8
+""" Parse json files from twarc using Python2 """
 
 import json
 import codecs
@@ -11,9 +11,6 @@ if len(sys.argv) < 2:
 if not os.path.exists(sys.argv[1]):
     sys.exit('Error: File %s not found' % sys.argv[1])
 
-# UTF8Writer = codecs.getwriter('utf8')
-# sys.stdout = UTF8Writer(sys.stdout)
-	
 i = 0
 
 with open(sys.argv[1], 'r') as f:
@@ -30,6 +27,5 @@ with open(sys.argv[1], 'r') as f:
         except:
             pass
         
-
-#print ('\nTotal number of tweets:')
-#print (i)
+print ('\nTotal number of tweets:')
+print (i)

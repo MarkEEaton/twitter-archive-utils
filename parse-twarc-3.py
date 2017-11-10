@@ -1,3 +1,5 @@
+""" Parse json files from twarc using Python3 """
+
 import json
 import codecs
 import sys
@@ -26,5 +28,5 @@ with open(sys.argv[1], 'r') as f:
             pass
         
 
-#print ('\nTotal number of tweets:')
-#print (i)
+print ('\nTotal number of tweets:')
+print (i)
